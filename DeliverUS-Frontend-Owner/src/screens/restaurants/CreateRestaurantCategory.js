@@ -72,6 +72,7 @@ export default function CreateRestaurantCategory ({ navigation, route }) {
       setBackendErrors(error.errors)
     }
   }
+  // si una categoria ya existe da error y no la crea
   return (
     <Formik
       validationSchema={validationSchema}
